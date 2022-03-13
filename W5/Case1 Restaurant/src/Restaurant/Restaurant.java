@@ -1,9 +1,10 @@
 package Restaurant;
 
 public class Restaurant {
-    public String[] nama_makanan;
-    public double[] harga_makanan;
-    public int[] stok;
+    //edit jadi private
+    private String[] nama_makanan;
+    private double[] harga_makanan;
+    private int[] stok;
     public static byte id=0;
     
     //getter
