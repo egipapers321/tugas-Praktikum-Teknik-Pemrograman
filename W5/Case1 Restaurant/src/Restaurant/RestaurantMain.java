@@ -2,7 +2,8 @@ package Restaurant;
 
 /**
  *
- * @author A455LF-WIN10
+ * @author Egi Satria
+ * NIM : 211524040
  */
 public class RestaurantMain {
     public static void main(String[] args) {
