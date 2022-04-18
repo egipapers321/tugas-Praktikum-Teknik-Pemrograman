@@ -22,26 +22,26 @@ private List<karyawan> getAllKaryawan()
 {  
 return karyawanService.getAllkaryawan();  
 }  
-//creating a get mapping that retrieves the detail of a specific book  
+//membuat get mapping untuk mendetail karyawan  
 @GetMapping("/karyawan/{id}")  
 private karyawan getBooks(@PathVariable("id") int id)   
 {  
 return karyawanService.getBooksById(id);  
 }  
-//creating a delete mapping that deletes a specified book  
+//membuat delete mapping untuk menghapus karyawan  
 @DeleteMapping("/karyawan/{id}")  
 private void deletekaryawan(@PathVariable("id") int id)   
 {  
 karyawanService.delete(id);  
 }  
-//creating post mapping that post the book detail in the database  
+
 @PostMapping("/karyawans")  
 private int saveKaryawan(@RequestBody karyawan karyawans)   
 {  
 karyawanService.saveOrUpdate(karyawans);  
 return karyawans.getId();  
 }  
-//creating put mapping that updates the book detail   
+ 
 @PutMapping("/karyawans")  
 private karyawan update(@RequestBody karyawan karyawan)   
 {  
