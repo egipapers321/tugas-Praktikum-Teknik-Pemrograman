@@ -11,14 +11,14 @@ public class KaryawanService
 {  
 @Autowired
 karyawanRepository karyawanRepository;  
-//getting all books record by using the method findaAll() of CrudRepository  
+ 
 public List<karyawan> getAllkaryawan()   
 {  
 List<karyawan> karyawan = new ArrayList<karyawan>();  
 karyawanRepository.findAll().forEach(karyawan1 -> karyawan.add(karyawan1));  
 return karyawan;  
 }  
-//getting a specific record by using the method findById() of CrudRepository  
+ 
 public karyawan getBooksById(int id)   
 {  
 return karyawanRepository.findById(id).get();  
